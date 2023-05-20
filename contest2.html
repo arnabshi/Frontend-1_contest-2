@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contest2.css">
+</head>
+<body>
+    <div class="main">  
+    <div class="navigation">
+      <h3>Library System</h3>
+      <div class="link">
+         <a href="#book">Book</a> 
+         <a href="#register">Register</a> 
+         <a href="#">Contact Us</a> 
+         <a href="#">Logout</a> 
+      </div>
+    </div>
+
+    <section class="list" id="book">
+    
+    <table border="5px" bordercolor="#8707B0">
+        <h1>Books</h1>
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td style="padding: 0.5rem;"">
+            
+            <table >
+            <a href="#"><h4 ><u>Book title 1</u></h4></a>
+        </br>
+            <tr>
+            <td>Publication Date:2010</td>
+            </tr>
+            <tr>
+            <td>Page Count:150</td>
+            </tr>
+            <tr><td>ISBN:123-45678910123</td></tr>
+            </table>
+            </td>
+            <td>Author Name 1</td>
+            <td>Genre 1</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td style="padding: 0.5rem;"">
+            <table >
+            <a href="#"><h4 ><u>Book title 2</u></h4></a>
+        </br>
+            <tr>
+            <td>Publication Date:2015</td>
+            </tr>
+            <tr>
+            <td>Page Count:2400</td>
+            </tr>
+            <tr><td>ISBN:123-45678910456</td></tr>
+            </table>
+            </td>
+            <td>Author Name 2</td>
+            <td>Genre 2</td>
+            <td> Not Available</td>
+            </tr>
+        <tr>
+            <td>3</td>
+            <td style="padding: 0.5rem;"">
+
+            <table >
+            <a href="#"><h4 ><u>Book title 3</u></h4></a>
+            </br>
+            <tr>
+            <td>Publication Date:2019</td>
+            </tr>
+            <tr>
+            <td>Page Count:5550</td>
+            </tr>
+            <tr><td>ISBN:123-45678910789</td></tr>
+            </table>
+            </td>
+            <td>Author Name 3</td>
+            <td>Genre 3</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td style="padding: 0.5rem;"">
+            <table >
+            <a href="#"><h4 ><u>Book title 4</u></h4></a>
+            </br>
+            <tr>
+            <td>Publication Date:2000</td>
+            </tr>
+            <tr>
+            <td>Page Count:4000</td>
+            </tr>
+            <tr><td>ISBN:123-45678910456</td></tr>
+            </table>
+            </td>
+            <td>Author Name 4</td>
+            <td>Genre 4</td>
+            <td>  Available</td>
+        </tr>        
+        </table>
+        
+    </section>
+    
+   <form action="/submit" method="post" id="register">
+    <h1>Register</h1>
+    <label>First Name</label>
+    <input type="text" id="name" required>
+    <label>Last Name</label>
+    <input type="text"  id =lastname required>
+    <label>Date Of Birth</label>
+    <input type="date"  id="dob" required>
+    <label>Age</label>
+    <input type="number" min="5" max="100"  id="age" required>
+    <label>Email</label>
+    <input type="email" id="email"required>
+    <label>Password</label>
+    <input type="password"  id ="password1"required>
+    <label>Confirm Password</label>
+    <input type="password"  id="password2"required>
+    <input type="submit" value="Submit" id="btn">
+  </form>
+
+  </div>  
+  <script src="./function.js"></script>
+</body>
+</html>
